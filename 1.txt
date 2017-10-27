@@ -1,0 +1,15 @@
+1. The first trigger of the app is Shake. The user can shake the phone in time of crises which will send the location of the concerned person to all the users of the app so that the most nearby person can give him first aid.
+
+2. The second feature of the app which has been implemented is the microphone speech input following the shake trigger. The user after shaking the phone can say a particular keyword like "heart Attack", "Asthma Attack" or any other type of mishap that he has been surrounded by. Hence his location and address along with the ailment will be send to the users so that the most nearby amongst them can save him.
+
+3.The third feature of the app which has been implemented is the successful retreival of the current location of the user. The users location is being retreived after the above two triggers and then it will be stored in the Firebase database for further processing which we will implement shortly.
+
+4. The fourth feature which has been implented uptil now is the "I cannot sleep feature". Using this feature the user can shake the phone and then speak " I cannot sleep" which further leads to the app intenting to an activity playing all the soothing songs through Youtube Videos.
+
+
+
+Expected updates :
+
+1. The Blood donation feature: Using this feature the user can give blood and the the recepient will be able to see the list of persons who are present to donate blood in the nearby location.
+
+2. The sending of location and the ailment of the person in crises to the family members and the users of the app.

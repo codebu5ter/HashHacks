@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="com.google.firebase:firebase-database-connection-10.0.1">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.android/build-cache/37b5630445203d29a088892968a486e85e27a117/output/res" />
+      <root url="jar://$USER_HOME$/.android/build-cache/37b5630445203d29a088892968a486e85e27a117/output/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -58,7 +58,6 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public void onPause() {
-        // Add the following line to unregister the Sensor Manager onPause
         mSensorManager.unregisterListener(mShakeDetector);
         super.onPause();
     }
@@ -97,6 +96,7 @@ public class MainActivity extends AppCompatActivity {
                         Intent intent = YouTubeStandalonePlayer.createPlaylistIntent(this, YoutubeActivity.GOOGLE_API_KEY, YoutubeActivity.YOUTUBE_PLAYLIST, 0, 0, true, true);
                         startActivity(intent);
                     }
+
                 }
                 break;
             }
