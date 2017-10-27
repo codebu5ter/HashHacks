@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/HashHacks.iml" filepath="$PROJECT_DIR$/HashHacks.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fusedbulblib/fusedbulblib.iml" filepath="$PROJECT_DIR$/fusedbulblib/fusedbulblib.iml" />
     </modules>
   </component>
 </project>

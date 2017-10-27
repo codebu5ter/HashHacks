@@ -19,6 +19,8 @@
             </intent-filter>
         </activity>
         <service android:name=".ShakeService"></service>
+        <activity android:name=".HomeFrag"/>
+        <activity android:name=".SplashActivity2"/>
         <service android:name=".MicrophoneService"></service>
     </application>
 
