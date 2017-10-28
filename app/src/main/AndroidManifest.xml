@@ -21,6 +21,8 @@
         <service android:name=".ShakeService"></service>
         <activity android:name=".HomeFrag"/>
         <activity android:name=".SplashActivity2"/>
+        <activity android:name=".FirstFragment"/>
+        <activity android:name=".First2"/>
         <service android:name=".MicrophoneService"></service>
     </application>
 

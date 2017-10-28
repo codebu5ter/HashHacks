@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    tools:context="com.example.hashhacks.First2"
+    android:background="@drawable/background"
+    tools:showIn="@layout/first2_layout">
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/imageView2"
+        android:layout_gravity="right"
+        android:onClick="onclickhome"
+        android:src="@drawable/ic_home"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+<EditText
+    android:id="@+id/bmi"
+    android:layout_width="96dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:ems="10"
+    android:fadingEdgeLength="10dp"
+    android:inputType="numberDecimal"
+    android:textAlignment="center"
+    android:layout_alignBottom="@+id/textView4"
+    android:layout_toLeftOf="@+id/imageView2"
+    android:layout_toStartOf="@+id/imageView2" />
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textAppearance="?android:attr/textAppearanceLarge"
+    android:text="BMI is"
+    android:id="@+id/textView4"
+    android:textSize="30dp"
+    android:textColor="#060606"
+    android:fontFamily="times new roman"
+    android:layout_centerVertical="true"
+    android:layout_alignLeft="@+id/textView9"
+    android:layout_alignStart="@+id/textView9" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="You should eat"
+        android:id="@+id/textView9"
+        android:textSize="25dp"
+        android:textColor="#060606"
+        android:fontFamily="times new roman"
+        android:layout_above="@+id/consume"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/consume"
+        android:layout_width="96dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:ems="10"
+        android:fadingEdgeLength="10dp"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        android:layout_marginBottom="68dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/textView9"
+        android:layout_alignStart="@+id/textView9" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Calories/day"
+        android:id="@+id/textView10"
+        android:layout_alignBottom="@+id/consume"
+        android:textColor="#060606"
+        android:textSize="18dp"
+        android:fontFamily="times new roman"
+        android:layout_toRightOf="@+id/consume"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:id="@+id/image"
+        android:layout_gravity="right"
+        android:layout_above="@+id/textView4"
+        android:layout_below="@+id/imageView2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/textView4"
+        android:layout_toLeftOf="@+id/textView4" />
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:id="@+id/yourvalue"
+        android:fontFamily="times new roman"
+        android:textSize="20dp"
+        android:textColor="#060606"
+        android:layout_below="@+id/imageView2"
+        android:layout_above="@+id/bmi"
+        android:layout_alignRight="@+id/imageView2"
+        android:layout_alignEnd="@+id/imageView2"
+        android:layout_alignLeft="@+id/textView4"
+        android:layout_alignStart="@+id/textView4" />
+
+</RelativeLayout>

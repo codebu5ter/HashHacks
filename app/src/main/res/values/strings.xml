@@ -12,4 +12,9 @@
     <string name="location_hint">Use GPS, WI-FI, and cell networks for location</string>
     <string name="location_exit">DENY</string>
     <string name="location_allow">ALLOW</string>
+    <string-array name="gender">
+        <item>Female</item>
+        <item>Male</item>
+    </string-array>
+    <string name="appbar_scrolling_view_behavior" translatable="false">android.support.design.widget.AppBarLayout$ScrollingViewBehavior</string>
 </resources>

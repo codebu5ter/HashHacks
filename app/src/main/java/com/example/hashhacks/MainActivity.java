@@ -23,6 +23,7 @@ public class MainActivity extends AppCompatActivity {
     private Sensor mAccelerometer;
     private ShakeDetector mShakeDetector;
     private final int SPEECH_RECOGNITION_CODE = 1;
+    private String urltest;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -96,10 +97,54 @@ public class MainActivity extends AppCompatActivity {
                         Intent intent = YouTubeStandalonePlayer.createPlaylistIntent(this, YoutubeActivity.GOOGLE_API_KEY, YoutubeActivity.YOUTUBE_PLAYLIST, 0, 0, true, true);
                         startActivity(intent);
                     }
+                    else if (text.matches("I want to be healthy")) {
+
+//                        JSONParse jsonParse = new JSONParse();
+//                        urltest=jsonParse.createUri();
+//                        jsonParse.getJSONObjectFromURL(urltest);
+
+//                        HttpURLConnection urlConnection = null;
+//                        try {
+//                            URL url = new URL("https://api.waqi.info/feed/geo:28.6947212;77.2146029/?token=2ab788dd6b5d69073cb1e26b973d8b35f2d45d3a");
+//                            urlConnection = (HttpURLConnection) url.openConnection();
+//                            urlConnection.setRequestMethod("GET");
+//                            urlConnection.setReadTimeout(10000 /* milliseconds */);
+//                            urlConnection.setConnectTimeout(15000 /* milliseconds */);
+//                            urlConnection.setDoOutput(true);
+//                            urlConnection.connect();
+//
+//                            BufferedReader br = new BufferedReader(new InputStreamReader(url.openStream()));
+//                            StringBuilder sb = new StringBuilder();
+//                            String line;
+//                            while ((line = br.readLine()) != null) {
+//                                sb.append(line + "\n");
+//                            }
+//
+//                            Log.d(TAG, "onActivityResult: " + sb.toString());
+//                            br.close();
+//                        } catch (MalformedURLException e) {
+//                            e.printStackTrace();
+//                        } catch (IOException e) {
+//                            e.printStackTrace();
+//                        } finally {
+//                            urlConnection.disconnect();
+//
+                        Intent intent = YouTubeStandalonePlayer.createPlaylistIntent(this, YoutubeActivity.GOOGLE_API_KEY, "PLpThn6Vz7qBf-xWRixnWD7ZYzGi6ctEvK", 0, 0, true, true);
+                        startActivity(intent);
+
+                    }
+                    else if (text.matches("calculate my body mass index")) {
+                        Intent intent = new Intent(this, FirstFragment.class);
+                        startActivity(intent);
+                    }
+
+
 
                 }
                 break;
             }
         }
+
     }
+
 }
