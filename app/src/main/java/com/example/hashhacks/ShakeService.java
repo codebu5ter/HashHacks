@@ -6,7 +6,6 @@ import android.content.Intent;
 import android.hardware.Sensor;
 import android.hardware.SensorManager;
 import android.os.IBinder;
-import android.widget.Toast;
 
 /**
  * Created by Nikhil on 27-10-2017.
@@ -42,7 +41,10 @@ public class ShakeService extends Service {
 
 //                Intent i = getApplicationContext().getPackageManager().getLaunchIntentForPackage("com.facebook.katana");
 //                getApplicationContext().startActivity(i);
-                Toast.makeText(getApplicationContext(), "shake",Toast.LENGTH_SHORT).show();
+//                Toast.makeText(getApplicationContext(), "shake",Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent (getApplicationContext(), MainActivity.class)
+                        .addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                startActivity(intent);
 
             }
         });
